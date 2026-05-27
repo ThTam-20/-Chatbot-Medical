@@ -31,7 +31,7 @@ index_name = "medical-chatbot"  # change if desired
 if not pc.has_index(index_name):
     pc.create_index(
         name=index_name,
-        dimension=384,
+        dimension=768,
         metric="cosine",
         spec=ServerlessSpec(cloud="aws", region="us-east-1"),
     )

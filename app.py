@@ -33,7 +33,6 @@ docsearch = PineconeVectorStore.from_existing_index(
 
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":3})
 
-# Hệ thống sẽ tự động bốc biến GEMINI_API_KEY hoặc GOOGLE_API_KEY bạn đã nạp trong os.environ lúc nãy
 chatModel = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     temperature=0.3         

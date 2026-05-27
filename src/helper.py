@@ -45,5 +45,5 @@ def text_split(extracted_data):
 
 #Download the Embeddings from HuggingFace 
 def download_hugging_face_embeddings():
-    embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')  #this model return 384 dimensions, supports Vietnamese
+    embeddings=HuggingFaceEmbeddings(model_name='keepitreal/vietnamese-sbert')  #this model return 768 dimensions, supports Vietnamese
     return embeddings
