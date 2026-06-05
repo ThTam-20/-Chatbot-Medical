@@ -1,6 +1,6 @@
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from typing import List
 from langchain_core.documents import Document
 
@@ -45,5 +45,5 @@ def text_split(extracted_data):
 
 #Download the Embeddings from HuggingFace 
 def download_hugging_face_embeddings():
-    embeddings=HuggingFaceEmbeddings(model_name='keepitreal/vietnamese-sbert')  #this model return 768 dimensions, supports Vietnamese
+    embeddings=HuggingFaceEmbeddings(model_name='intfloat/multilingual-e5-small')  #this model return 384 dimensions
     return embeddings

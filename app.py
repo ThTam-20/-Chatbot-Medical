@@ -12,11 +12,13 @@ app = Flask(__name__)
 
 load_dotenv()
 
-PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
+PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
+# langchain_google_genai yêu cầu biến GOOGLE_API_KEY
+os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
 
 
 embeddings = download_hugging_face_embeddings()
@@ -35,7 +37,8 @@ retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":
 
 chatModel = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    temperature=0.3         
+    temperature=0.3,
+    google_api_key=GEMINI_API_KEY
 )
 
 

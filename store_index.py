@@ -8,7 +8,7 @@ from langchain_pinecone import PineconeVectorStore
 load_dotenv()
 
 
-PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
+PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
@@ -31,7 +31,7 @@ index_name = "medical-chatbot"  # change if desired
 if not pc.has_index(index_name):
     pc.create_index(
         name=index_name,
-        dimension=768,
+        dimension=384,
         metric="cosine",
         spec=ServerlessSpec(cloud="aws", region="us-east-1"),
     )
