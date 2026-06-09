@@ -9,9 +9,15 @@ body,html{
 .chat{
 	margin-top: auto;
 	margin-bottom: auto;
+	width: 100%;
+	max-width: 1200px; /* control chat frame width */
+	padding: 0 20px; /* spacing from viewport edges */
 }
 .card{
-	height: 500px;
+	/* responsive height: fraction of viewport with sensible bounds */
+	height: 70vh;
+	min-height: 420px;
+	max-height: 800px;
 	border-radius: 15px !important;
 	background-color: rgba(0,0,0,0.4) !important;
 }
