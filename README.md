@@ -252,8 +252,7 @@ Dự án này được phát triển như một ứng dụng RAG (Retrieval-Augm
 
 ---
 
-## 📞 Hỗ Trợ (Support)
-
+## 
 Nếu gặp vấn đề, vui lòng:
 1. Kiểm tra file `.env` có đầy đủ API keys
 2. Xác minh Pinecone index được khởi tạo thành công
