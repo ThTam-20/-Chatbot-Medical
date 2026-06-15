@@ -230,10 +230,6 @@ Language-matched Output
 
 ## 📝 Ghi Chú Quan Trọng (Important Notes)
 
-⚠️ **Bảo mật:**
-- Không commit `.env` file chứa API keys
-- Giữ API keys an toàn và bí mật
-
 ⚠️ **Y Tế:**
 - Chatbot này là công cụ hỗ trợ, KHÔNG PHẢI sự thay thế cho tư vấn bác sĩ
 - Luôn tư vấn chuyên gia y tế cho các quyết định y tế quan trọng
@@ -248,7 +244,7 @@ Language-matched Output
 
 **ThTam**
 
-Dự án này được phát triển như một ứng dụng RAG (Retrieval-Augmented Generation) sử dụng các công nghệ AI hiện đại nhất.
+Dự án này được phát triển như một ứng dụng RAG (Retrieval-Augmented Generation).
 
 ---
 
@@ -257,12 +253,6 @@ Nếu gặp vấn đề, vui lòng:
 1. Kiểm tra file `.env` có đầy đủ API keys
 2. Xác minh Pinecone index được khởi tạo thành công
 3. Kiểm tra logs trong terminal
-
----
-
-## 📄 License
-
-MIT License (hoặc license khác nếu bạn chọn)
 
 ---
 
