@@ -39,7 +39,13 @@ Một ứng dụng chatbot y khoa thông minh hỗ trợ cả tiếng Việt và
 
 ---
 
-## 📦 Yêu Cầu (Requirements)
+## � Demo
+
+![Medical Chatbot Demo](screenshots/chatbot_demo.png)
+
+---
+
+## �📦 Yêu Cầu (Requirements)
 
 - Python 3.8+
 - Conda (khuyến nghị) hoặc pip
